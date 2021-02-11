@@ -39,7 +39,14 @@ header {
   margin: auto;
   padding: 0.2em 0.6em;
   text-transform: uppercase;
-  width: fit-content;
+  width: max-content;
+}
+
+@media (max-width: 350px) {
+  #title {
+    text-align: center;
+    width: min-content;
+  }
 }
 
 #img-div {
