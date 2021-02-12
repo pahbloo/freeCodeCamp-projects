@@ -8,6 +8,7 @@ html {
   line-height: 1.5em;
 }
 
+/* Color palette from https://www.colourlovers.com/palette/1827160/Senna */
 header {
   background: linear-gradient(
     #edd500 0 25%,
