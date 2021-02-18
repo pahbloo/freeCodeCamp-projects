@@ -9,4 +9,4 @@ function palindrome(str) {
 }
 
 let code = document.getElementById("my-solution");
-code.innerText = palindrome.toString();
+code.innerHTML = palindrome.toString();
