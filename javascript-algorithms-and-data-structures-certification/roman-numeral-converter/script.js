@@ -1,8 +1,8 @@
 function convertToRoman(num) {
   const roman = ` M MM MMM
-  C CC CCC CD D DC DCC DCCC CM
-  X XX XXX XL L LX LXX LXXX XC
-  I II III IV V VI VII VIII IX`
+ C CC CCC CD D DC DCC DCCC CM
+ X XX XXX XL L LX LXX LXXX XC
+ I II III IV V VI VII VIII IX`
     .split("\n")
     .map((el) => el.split(" "));
 
