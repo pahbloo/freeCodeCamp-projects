@@ -17,3 +17,38 @@ function rot13(str) {
 
 let code = document.getElementById("my-solution");
 code.innerHTML = rot13.toString();
+
+tests = [
+  {
+    text:
+      "<code>rot13(&quot;SERR PBQR PNZC&quot;)</code> should decode to <code>FREE CODE CAMP</code>",
+    code: rot13("SERR PBQR PNZC") === "FREE CODE CAMP",
+  },
+  {
+    text:
+      "<code>rot13(&quot;SERR CVMMN!&quot;)</code> should decode to <code>FREE PIZZA!</code>",
+    code: rot13("SERR CVMMN!") === "FREE PIZZA!",
+  },
+  {
+    text:
+      "<code>rot13(&quot;SERR YBIR?&quot;)</code> should decode to <code>FREE LOVE?</code>",
+    code: rot13("SERR YBIR?") === "FREE LOVE?",
+  },
+  {
+    text:
+      "<code>rot13(&quot;GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.&quot;)</code> should decode to <code>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.</code>",
+    code:
+      rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.") ===
+      "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.",
+  },
+];
+
+testsList = document.getElementById("tests");
+
+tests.forEach(({ text, code }) => {
+  let p = document.createElement("p");
+
+  p.innerHTML = (code ? "✔" : "❌") + " " + text;
+
+  testsList.appendChild(p);
+});
