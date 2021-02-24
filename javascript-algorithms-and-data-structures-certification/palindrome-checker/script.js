@@ -11,7 +11,7 @@ function palindrome(str) {
 let code = document.getElementById("my-solution");
 code.innerHTML = palindrome.toString();
 
-tests = [
+const tests = [
   {
     text: "<code>palindrome(&quot;eye&quot;)</code> should return a boolean.",
     code: typeof palindrome("eye") === "boolean",
@@ -74,7 +74,7 @@ tests = [
   },
 ];
 
-testsList = document.getElementById("tests");
+const testsList = document.getElementById("tests");
 
 tests.forEach(({ text, code }) => {
   let p = document.createElement("p");

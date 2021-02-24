@@ -18,7 +18,7 @@ function rot13(str) {
 let code = document.getElementById("my-solution");
 code.innerHTML = rot13.toString();
 
-tests = [
+const tests = [
   {
     text:
       "<code>rot13(&quot;SERR PBQR PNZC&quot;)</code> should decode to <code>FREE CODE CAMP</code>",
@@ -43,7 +43,7 @@ tests = [
   },
 ];
 
-testsList = document.getElementById("tests");
+const testsList = document.getElementById("tests");
 
 tests.forEach(({ text, code }) => {
   let p = document.createElement("p");

@@ -17,7 +17,7 @@ function convertToRoman(num) {
 let code = document.getElementById("my-solution");
 code.innerHTML = convertToRoman.toString();
 
-tests = [
+const tests = [
   {
     text: "<code>convertToRoman(2)</code> should return &quot;II&quot;.",
     code: convertToRoman(2) === "II",
@@ -126,7 +126,7 @@ tests = [
   },
 ];
 
-testsList = document.getElementById("tests");
+const testsList = document.getElementById("tests");
 
 tests.forEach(({ text, code }) => {
   let p = document.createElement("p");

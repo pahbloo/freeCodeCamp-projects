@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * @fileoverview microlight - syntax highlightning library
  * @version 0.0.7
@@ -63,7 +64,7 @@
         multichar,
         node,
         // calculating the colors for the style templates
-        colorArr = /(\d*\, \d*\, \d*)(, ([.\d]*))?/g.exec(
+        colorArr = /(\d*, \d*, \d*)(, ([.\d]*))?/g.exec(
           _window.getComputedStyle(el).color
         ),
         pxColor = "px rgba(" + colorArr[1] + ",",
@@ -211,7 +212,7 @@
             ![
               1, //  0: whitespace
               //  1: operator or braces
-              /[\/{}[(\-+*=<>:;|\\.,?!&@~]/[test](chr),
+              /[/{}[(\-+*=<>:;|\\.,?!&@~]/[test](chr),
               /[\])]/[test](chr), //  2: closing brace
               /[$\w]/[test](chr), //  3: (key)word
               chr == "/" && //  4: regex

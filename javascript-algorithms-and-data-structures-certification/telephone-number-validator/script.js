@@ -11,7 +11,7 @@ function telephoneCheck(str) {
 let code = document.getElementById("my-solution");
 code.innerHTML = telephoneCheck.toString();
 
-tests = [
+const tests = [
   {
     text:
       '<code>telephoneCheck("555-555-5555")</code> should return a boolean.',
@@ -129,7 +129,7 @@ tests = [
   },
 ];
 
-testsList = document.getElementById("tests");
+const testsList = document.getElementById("tests");
 
 tests.forEach(({ text, code }) => {
   let p = document.createElement("p");
