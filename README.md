@@ -15,3 +15,5 @@ An archive of my projects needed to obtain freeCodeCamp certifications
 - [Caesars Cipher](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/caesar-cipher)
 
 - [Telephone Number Validator](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/telephone-number-validator)
+
+- [Cash Register](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/cash-register)
