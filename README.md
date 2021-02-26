@@ -17,3 +17,5 @@ An archive of my projects needed to obtain freeCodeCamp certifications
 - [Telephone Number Validator](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/telephone-number-validator)
 
 - [Cash Register](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/cash-register)
+
+[My certification](https://www.freecodecamp.org/certification/pahbloo/javascript-algorithms-and-data-structures)
