@@ -8,5 +8,62 @@
     <link rel="stylesheet" href="style.css" />
     <title>Build a Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <figure>
+        <img
+          src="https://i.postimg.cc/vmygxjM3/LOGO.png"
+          alt="Logo da Fantastic"
+          width="150"
+        />
+      </figure>
+      <h1 id="title">FORMULÁRIO DE EMOJIS FAVORITOS</h1>
+    </header>
+
+    <form id="survey-form">
+      <section id="personal-data">
+        <p>
+          <label id="name-label" for="name"> Nome: </label>
+
+          <input id="name" placeholder="ex: João da Silva" required />
+        </p>
+
+        <p>
+          <label id="email-label" for="email"> Email: </label>
+          <input
+            id="email"
+            type="email"
+            placeholder="ex: joao@exemplo.com.br"
+            required
+          />
+        </p>
+        <p>
+          <label id="number-label" for="number"> Idade: </label>
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="150"
+            placeholder="ex: 42"
+          />
+
+          <select id="dropdown">
+            <option value=""></option>
+            <option value="GO">GO</option>
+            <option value="MG">MG</option>
+          </select>
+
+          <input type="radio" name="radio" value="a" />
+          <input type="radio" name="radio" value="b" />
+        </p>
+      </section>
+
+      <p id="description">
+        <strong>Instruções de preenchimento:</strong> Marque abaixo os seus
+        emojis favoritos. Selecione quantos quiser. Este é apenas um formulário
+        fictício, para um projeto no freeCodeCamp.org. Preencha se quiser, mas
+        saiba que isso não levará a nada.
+      </p>
+    </form>
+  </body>
 </html>
