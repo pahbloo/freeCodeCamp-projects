@@ -1,0 +1,42 @@
+body {
+  font-family: Calibri, Arial, Helvetica, "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  max-width: 640px;
+  padding: 5px;
+}
+
+header {
+  align-items: center;
+  border: solid;
+  display: flex;
+}
+
+figure {
+  margin: 1em;
+}
+
+img {
+  width: 100px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#title {
+  font-size: 1.4em;
+  margin: 1em;
+}
+
+#personal-data,
+#description {
+  border: solid;
+  border-top: 0;
+  margin: 0;
+  padding: 1em;
+}
+
+#personal-data p {
+  margin: 0;
+}
