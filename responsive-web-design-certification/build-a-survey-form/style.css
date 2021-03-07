@@ -41,11 +41,25 @@ label {
   align-items: baseline;
   display: flex;
   margin: 0;
+  margin-bottom: 0.2em;
 }
 
 #personal-data input {
-  flex: 1;
   border: none;
-  border-bottom: solid 2px;
+  border-bottom: solid black 2px;
+  color: blue;
+  flex: 1;
   margin-left: 0.2em;
+}
+
+#personal-data input[type="radio"] {
+  flex: 0;
+}
+
+#personal-data label {
+  margin-right: 0.2em;
+}
+
+#number {
+  margin-right: 0.2em;
 }
