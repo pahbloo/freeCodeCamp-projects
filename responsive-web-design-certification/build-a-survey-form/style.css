@@ -66,6 +66,9 @@ label {
 }
 
 #personal-data select {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
   flex: 1;
   margin-right: 0.2em;
   width: 5em;
