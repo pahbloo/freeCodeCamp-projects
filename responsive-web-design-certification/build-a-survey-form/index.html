@@ -13,13 +13,13 @@
       <figure>
         <img src="LOGO.png" alt="Logo da Fantastic" width="150" />
       </figure>
-      <h1 id="title">FORMULÁRIO DE EMOJIS FAVORITOS</h1>
+      <h1 id="title">FAVORITE EMOJIS FORM</h1>
     </header>
 
     <form id="survey-form">
       <section id="personal-data">
         <p>
-          <label id="name-label" for="name"> Nome: </label>
+          <label id="name-label" for="name"> Name: </label>
 
           <input id="name" placeholder="ex: João da Silva" required />
         </p>
@@ -34,34 +34,44 @@
           />
         </p>
         <p>
-          <label id="number-label" for="number"> Idade: </label>
-          <input
-            id="number"
-            type="number"
-            min="13"
-            max="150"
-            placeholder="ex: 42"
-          />
-          <label>Sexo:</label>
-          <input id="M" type="radio" name="radio" value="M" />
-          <label for="M">M</label>
-          <input id="F" type="radio" name="radio" value="F" />
-          <label for="F">F</label>
+          <span class="country">
+            <label for="dropdown">Country:</label>
+            <select id="dropdown">
+              <option value=""></option>
+              <option value="Brazil">Brazil</option>
+              <option value="United States">United States</option>
+              <option value="Other">Other</option>
+            </select>
+          </span>
 
-          <label for="dropdown">UF:</label>
-          <select id="dropdown">
-            <option value=""></option>
-            <option value="GO">GO</option>
-            <option value="MG">MG</option>
-          </select>
+          <span class="age">
+            <label id="number-label" for="number"> Age: </label>
+            <input
+              id="number"
+              type="number"
+              min="13"
+              max="150"
+              placeholder="ex: 42"
+            />
+          </span>
+
+          <span class="genre">
+            <label>Genre:</label>
+            <input id="M" type="radio" name="radio" value="M" />
+            <label for="M">M</label>
+            <input id="F" type="radio" name="radio" value="F" />
+            <label for="F">F</label>
+            <input id="Other" type="radio" name="radio" value="Other" />
+            <label for="Other">Other</label>
+          </span>
         </p>
       </section>
 
       <p id="description">
-        <strong>Instruções de preenchimento:</strong> Marque abaixo os seus
-        emojis favoritos. Selecione quantos quiser. Este é apenas um formulário
-        fictício, para um projeto no freeCodeCamp.org. Preencha se quiser, mas
-        saiba que isso não levará a nada.
+        <strong>Instructions:</strong> Check your favorite emojis below. Select
+        as many as you want. This is just a fictional form, for a project at
+        freeCodeCamp.org. Fill in if you want, but know that it won't lead to
+        anything.
       </p>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -40,8 +40,20 @@ label {
 #personal-data p {
   align-items: baseline;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 0.2em;
+}
+
+#personal-data p span {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.country {
+  flex: 1;
 }
 
 #personal-data input {
@@ -50,10 +62,17 @@ label {
   color: blue;
   flex: 1;
   margin-left: 0.2em;
+  margin-right: 0.2em;
 }
 
-#personal-data input[type="radio"] {
-  flex: 0;
+#personal-data select {
+  flex: 1;
+  margin-right: 0.2em;
+  width: 5em;
+}
+
+#personal-data input[type="number"] {
+  width: 5em;
 }
 
 #personal-data label {
