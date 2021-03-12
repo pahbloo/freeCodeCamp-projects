@@ -30,7 +30,8 @@ label {
 }
 
 #personal-data,
-#description {
+#description,
+#check-emojis {
   border: solid;
   border-top: 0;
   margin: 0;
@@ -84,4 +85,15 @@ label {
 
 #number {
   margin-right: 0.2em;
+}
+
+#check-emojis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#check-emojis label {
+  font-size: 1.5em;
+  padding: 0.9em;
 }
