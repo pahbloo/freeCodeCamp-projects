@@ -31,7 +31,9 @@ label {
 
 #personal-data,
 #description,
-#check-emojis {
+#check-emojis,
+#textarea,
+#submit {
   border: solid;
   border-top: 0;
   margin: 0;
@@ -96,4 +98,31 @@ label {
 #check-emojis label {
   font-size: 1.5em;
   padding: 0.9em;
+}
+
+#textarea label {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
+  padding: 0;
+  width: 100%;
+}
+
+#submit {
+  background-color: #c4c4c4;
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  width: 100%;
+}
+
+#submit:hover,
+#submit:active {
+  background-color: #4f4f4f;
+  cursor: pointer;
 }
