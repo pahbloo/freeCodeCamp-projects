@@ -116,9 +116,8 @@ const projects = {
   "cash-register": { title: "", problem: "", solution: "", tests: [] },
 };
 
-function id(identifier) {
-  return document.getElementById(identifier);
-}
+const id = (identifier) => document.getElementById(identifier);
+
 let title = id("title");
 let problem = id("problem");
 let solution = id("my-solution");
@@ -132,8 +131,6 @@ solution.innerHTML = projects[project].solution.toString();
 
 projects[project].tests.forEach(({ text, code }) => {
   let p = document.createElement("p");
-
-  p.innerHTML = (code ? "✔" : "❌") + " " + text;
-
+  p.innerHTML = `${code ? "✔" : "❌"} ${text}`;
   tests.appendChild(p);
 });
