@@ -854,12 +854,26 @@ let tests = id("tests");
 const URLParams = new URL(document.location).searchParams;
 let project = URLParams.get("p") || "palindrome-checker";
 
-title.innerHTML = projects[project].title;
-problem.innerHTML = projects[project].problem;
-solution.innerHTML = projects[project].solution.toString();
+function fillPage(project) {
+  title.innerHTML = projects[project].title;
+  problem.innerHTML = projects[project].problem;
+  solution.innerHTML = projects[project].solution.toString();
 
-projects[project].tests.forEach(({ text, code }) => {
-  let p = document.createElement("p");
-  p.innerHTML = `${code ? "✔" : "❌"} ${text}`;
-  tests.appendChild(p);
+  projects[project].tests.forEach(({ text, code }) => {
+    let p = document.createElement("p");
+    p.innerHTML = `${code ? "✔" : "❌"} ${text}`;
+    tests.appendChild(p);
+  });
+}
+
+fillPage(project);
+
+let nav = document.getElementsByTagName("nav")[0];
+nav.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  if (!Object.prototype.hasOwnProperty.call(ev.target.attributes, "href"))
+    return;
+  fillPage(ev.target.attributes.href.value.slice(3));
+  // TODO: microlight doesn't reformat the new solution
+  // TODO: push updated URL to history
 });
