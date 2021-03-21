@@ -867,6 +867,7 @@ function fillPage(project) {
   });
 }
 
+history.replaceState({ p: project }, "", `?p=${project}`);
 fillPage(project);
 
 let nav = document.getElementsByTagName("nav")[0];
@@ -874,7 +875,12 @@ nav.addEventListener("click", (ev) => {
   ev.preventDefault();
   if (!Object.prototype.hasOwnProperty.call(ev.target.attributes, "href"))
     return;
-  fillPage(ev.target.attributes.href.value.slice(3));
+  const pAttribute = ev.target.attributes.href.value;
+  history.pushState({ p: pAttribute.slice(3) }, "", pAttribute);
+  fillPage(history.state.p);
   // TODO: microlight doesn't reformat the new solution
-  // TODO: push updated URL to history
 });
+
+window.onpopstate = function (ev) {
+  fillPage(ev.state.p);
+};
