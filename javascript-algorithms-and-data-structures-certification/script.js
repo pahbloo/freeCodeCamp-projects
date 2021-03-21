@@ -855,6 +855,7 @@ const URLParams = new URL(document.location).searchParams;
 let project = URLParams.get("p") || "palindrome-checker";
 
 function fillPage(project) {
+  document.title = projects[project].title;
   title.innerHTML = projects[project].title;
   problem.innerHTML = projects[project].problem;
   solution.innerHTML = projects[project].solution.toString();
