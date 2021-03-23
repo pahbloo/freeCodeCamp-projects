@@ -865,6 +865,9 @@ function fillPage(project) {
     p.innerHTML = `${code ? "✔" : "❌"} ${text}`;
     tests.appendChild(p);
   });
+
+  // eslint-disable-next-line no-undef
+  microlight.reset();
 }
 
 history.replaceState({ p: project }, "", `?p=${project}`);
