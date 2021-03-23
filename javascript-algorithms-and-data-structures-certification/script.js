@@ -882,7 +882,6 @@ nav.addEventListener("click", (ev) => {
   const pAttribute = ev.target.attributes.href.value;
   history.pushState({ p: pAttribute.slice(3) }, "", pAttribute);
   fillPage(history.state.p);
-  // TODO: microlight doesn't reformat the new solution
 });
 
 window.onpopstate = function (ev) {
