@@ -855,17 +855,14 @@ const URLParams = new URL(document.location).searchParams;
 let project = URLParams.get("p") || "palindrome-checker";
 
 function fillPage(project) {
-  document.title = projects[project].title;
-  title.innerHTML = projects[project].title;
-  problem.innerHTML = projects[project].problem;
-  solution.innerHTML = projects[project].solution.toString();
-  tests.innerHTML = "";
-
-  projects[project].tests.forEach(({ text, code }) => {
-    let p = document.createElement("p");
-    p.innerHTML = `${code ? "✔" : "❌"} ${text}`;
-    tests.appendChild(p);
-  });
+  const projObj = projects[project];
+  document.title = projObj.title;
+  title.innerHTML = projObj.title;
+  problem.innerHTML = projObj.problem;
+  solution.innerHTML = projObj.solution.toString();
+  tests.innerHTML = projObj.tests
+    .map(({ text, code }) => `<p>${code ? "✔" : "❌"} ${text}</p>`)
+    .join("");
 
   // eslint-disable-next-line no-undef
   microlight.reset();
