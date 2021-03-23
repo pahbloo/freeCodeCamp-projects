@@ -859,6 +859,7 @@ function fillPage(project) {
   title.innerHTML = projects[project].title;
   problem.innerHTML = projects[project].problem;
   solution.innerHTML = projects[project].solution.toString();
+  tests.innerHTML = "";
 
   projects[project].tests.forEach(({ text, code }) => {
     let p = document.createElement("p");
