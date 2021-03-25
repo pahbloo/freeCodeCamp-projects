@@ -1,3 +1,5 @@
+import microlight from "./microlight.js";
+
 function palindrome(str) {
   let arr = str.toLowerCase().match(/[a-z0-9]/gi);
 
@@ -864,7 +866,6 @@ function fillPage(project) {
     .map(({ text, code }) => `<p>${code ? "✔" : "❌"} ${text}</p>`)
     .join("");
 
-  // eslint-disable-next-line no-undef
   microlight.reset();
 }
 
@@ -884,3 +885,5 @@ nav.addEventListener("click", (ev) => {
 window.onpopstate = function (ev) {
   fillPage(ev.state.p);
 };
+
+console.log("hello");

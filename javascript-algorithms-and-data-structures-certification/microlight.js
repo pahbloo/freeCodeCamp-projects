@@ -1,3 +1,5 @@
+let exports = {};
+
 /* eslint-disable no-undef */
 /**
  * @fileoverview microlight - syntax highlightning library
@@ -254,3 +256,5 @@
     );
   }
 });
+
+export default exports;
