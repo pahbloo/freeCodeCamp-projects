@@ -8,9 +8,6 @@ let problem = id("problem");
 let solution = id("my-solution");
 let tests = id("tests");
 
-const URLParams = new URL(document.location).searchParams;
-let project = URLParams.get("p") || "palindrome-checker";
-
 function fillPage(project) {
   const projObj = projects[project];
   document.title = projObj.title;
@@ -24,9 +21,13 @@ function fillPage(project) {
   microlight.reset();
 }
 
+// on first-load
+const URLParams = new URL(document.location).searchParams;
+let project = URLParams.get("p") || "palindrome-checker";
 history.replaceState({ p: project }, "", `?p=${project}`);
 fillPage(project);
 
+// on navigation
 let nav = document.getElementsByTagName("nav")[0];
 nav.addEventListener("click", (ev) => {
   ev.preventDefault();
@@ -37,6 +38,7 @@ nav.addEventListener("click", (ev) => {
   fillPage(history.state.p);
 });
 
+// on clicking 'back'
 window.onpopstate = function (ev) {
   fillPage(ev.state.p);
 };
