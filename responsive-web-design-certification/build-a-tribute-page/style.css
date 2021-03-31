@@ -3,31 +3,28 @@ Global CSS
 */
 
 html {
-  background-color: #dff;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
 }
 
-@media (max-width: 50rem) {
+@media (min-width: 50rem) {
   html {
-    background-color: initial;
+    background-color: #dff;
   }
 }
 
 body {
   background-color: red;
-  border-radius: 1.2rem;
-  box-shadow: 20px 20px 60px #5a6868, -20px -20px 60px #ffffff;
-  margin: 1rem auto;
   max-width: 50rem;
+  margin: auto;
 }
 
-@media (max-width: 50rem) {
+@media (min-width: 50rem) {
   body {
-    border-radius: 0;
-    box-shadow: initial;
-    margin-top: 0;
+    border-radius: 1.2rem;
+    box-shadow: 20px 20px 60px #5a6868, -20px -20px 60px #ffffff;
+    margin: 1rem auto;
   }
 }
 
@@ -52,15 +49,14 @@ header {
     #f5f5f5 74.5% 75%,
     #edd500 75% 100%
   );
-  border-radius: 1rem;
   box-shadow: 0 0.5rem 0.2rem -0.2rem rgba(0, 0, 0, 0.5);
   margin: auto;
   padding: 1rem 1rem;
 }
 
-@media (max-width: 50rem) {
+@media (min-width: 50rem) {
   header {
-    border-radius: 0;
+    border-radius: 1rem;
   }
 }
 
@@ -92,12 +88,49 @@ figcaption {
   max-width: 30rem;
 }
 
+main {
+  padding: 1rem 3rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.5rem;
+  min-width: fit-content;
+}
+
 /* 
 Utilities
 */
+
+.align-right {
+  text-align: right;
+}
+
+.bg-white {
+  background-color: white;
+}
 
 .black-rounded {
   background-color: black;
   border-radius: 0.5rem;
   color: white;
+}
+
+.black-border {
+  border: solid black 0.2rem;
 }
