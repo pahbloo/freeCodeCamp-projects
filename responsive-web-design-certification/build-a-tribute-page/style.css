@@ -6,11 +6,18 @@ html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
+  scrollbar-color: rgb(112, 112, 112) #202020;
 }
 
 @media (min-width: 50rem) {
   html {
-    background-color: #dff;
+    /* background by Atle Mo, Lea Verou from https://projects.verou.me/css3patterns/#carbon-fibre */
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
+      radial-gradient(black 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
   }
 }
 
@@ -23,7 +30,7 @@ body {
 @media (min-width: 50rem) {
   body {
     border-radius: 1.2rem;
-    box-shadow: 20px 20px 60px #5a6868, -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px #222222, -20px -20px 60px #2e2e2e;
     margin: 1rem auto;
   }
 }
@@ -89,7 +96,15 @@ figcaption {
 }
 
 main {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
+  margin: auto;
+  max-width: 44rem;
+}
+
+@media (min-width: 50rem) {
+  main {
+    padding: 3rem 1rem;
+  }
 }
 
 p {
@@ -108,9 +123,33 @@ ul {
 li {
   font-style: italic;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   margin: 0.5rem;
   min-width: fit-content;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  float: right;
+  margin: auto;
+  max-width: 65%;
+  padding: 1em;
+}
+
+@media (min-width: 50rem) {
+  footer {
+    color: white;
+    padding: 1rem 0;
+  }
+
+  footer a {
+    color: white;
+  }
 }
 
 /* 
@@ -133,4 +172,12 @@ Utilities
 
 .black-border {
   border: solid black 0.2rem;
+}
+
+/* 
+Exceptions
+*/
+
+#conquistas *[data-last] {
+  margin-bottom: 0;
 }
