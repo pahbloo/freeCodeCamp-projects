@@ -1,0 +1,128 @@
+body {
+  font-family: Calibri, Arial, Helvetica, "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  max-width: 640px;
+  padding: 5px;
+}
+
+header {
+  align-items: center;
+  border: solid;
+  display: flex;
+}
+
+figure {
+  margin: 1em;
+}
+
+img {
+  width: 100px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#title {
+  font-size: 1.4em;
+  margin: 1em;
+}
+
+#personal-data,
+#description,
+#check-emojis,
+#textarea,
+#submit {
+  border: solid;
+  border-top: 0;
+  margin: 0;
+  padding: 1em;
+}
+
+#personal-data p {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+
+#personal-data p span {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.country {
+  flex: 1;
+}
+
+#personal-data input {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
+  flex: 1;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+#personal-data select {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
+  flex: 1;
+  margin-right: 0.2em;
+  width: 5em;
+}
+
+#personal-data input[type="number"] {
+  width: 5em;
+}
+
+#personal-data label {
+  margin-right: 0.2em;
+}
+
+#number {
+  margin-right: 0.2em;
+}
+
+#check-emojis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#check-emojis label {
+  font-size: 1.5em;
+  padding: 0.9em;
+}
+
+#textarea label {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
+  padding: 0;
+  width: 100%;
+}
+
+#submit {
+  background-color: #c4c4c4;
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  width: 100%;
+}
+
+#submit:hover,
+#submit:active {
+  background-color: #4f4f4f;
+  cursor: pointer;
+}
