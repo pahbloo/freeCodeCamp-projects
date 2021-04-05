@@ -11,12 +11,7 @@ html {
 
 @media (min-width: 50rem) {
   html {
-    /* background by Atle Mo, Lea Verou from https://projects.verou.me/css3patterns/#carbon-fibre */
-    background: radial-gradient(black 15%, transparent 16%) 0 0,
-      radial-gradient(black 15%, transparent 16%) 8px 8px,
-      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
-    background-color: #282828;
+    background-color: #aaaaaa;
     background-size: 16px 16px;
   }
 }
@@ -30,7 +25,7 @@ body {
 @media (min-width: 50rem) {
   body {
     border-radius: 1.2rem;
-    box-shadow: 20px 20px 60px #222222, -20px -20px 60px #2e2e2e;
+    box-shadow: 20px 20px 60px #444444, -20px -20px 60px #ffffff;
     margin: 1rem auto;
   }
 }
@@ -143,12 +138,7 @@ footer {
 
 @media (min-width: 50rem) {
   footer {
-    color: white;
     padding: 1rem 0;
-  }
-
-  footer a {
-    color: white;
   }
 }
 
