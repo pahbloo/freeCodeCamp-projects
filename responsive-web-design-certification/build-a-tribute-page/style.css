@@ -98,7 +98,7 @@ main {
 
 @media (min-width: 50rem) {
   main {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 1rem;
   }
 }
 
@@ -130,16 +130,9 @@ a {
 }
 
 footer {
-  float: right;
+  padding: 1rem 1rem 2rem;
   margin: auto;
-  max-width: 65%;
-  padding: 1em;
-}
-
-@media (min-width: 50rem) {
-  footer {
-    padding: 1rem 0;
-  }
+  max-width: 44rem;
 }
 
 /* 
