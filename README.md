@@ -11,7 +11,7 @@ An archive of my projects needed to obtain freeCodeCamp certifications
 
 - [Palindrome Checker](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=palindrome-checker)
 - [Roman Numeral Converter](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=roman-numeral-converter)
-- [Caesars Cipher](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=caesar-cipher)
+- [Caesars Cipher](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=caesars-cipher)
 - [Telephone Number Validator](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=telephone-number-validator)
 - [Cash Register](https://pahbloo.github.io/freeCodeCamp-projects/javascript-algorithms-and-data-structures-certification/?p=cash-register)
 - **[My certification](https://www.freecodecamp.org/certification/pahbloo/javascript-algorithms-and-data-structures)**
