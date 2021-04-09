@@ -6,12 +6,11 @@ html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
-  scrollbar-color: rgb(112, 112, 112) #202020;
 }
 
 @media (min-width: 50rem) {
   html {
-    background-color: #aaaaaa;
+    background-color: #edd50033;
     background-size: 16px 16px;
   }
 }
@@ -25,7 +24,7 @@ body {
 @media (min-width: 50rem) {
   body {
     border-radius: 1.2rem;
-    box-shadow: 20px 20px 60px #444444, -20px -20px 60px #ffffff;
+    box-shadow: 0 0.5rem 0.5rem -0.2rem rgba(0, 0, 0, 0.5);
     margin: 1rem auto;
   }
 }
