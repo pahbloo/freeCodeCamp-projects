@@ -130,11 +130,12 @@ li {
 }
 
 a {
-  color: black;
+  color: inherit;
   font-weight: bold;
 }
 
 footer {
+  color: white;
   padding: 1rem 1rem 2rem;
   margin: auto;
   max-width: 44rem;
