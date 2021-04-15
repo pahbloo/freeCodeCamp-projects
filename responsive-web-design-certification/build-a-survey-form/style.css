@@ -8,12 +8,6 @@ body {
   padding: 5px;
 }
 
-header {
-  align-items: center;
-  border: solid;
-  display: flex;
-}
-
 figure {
   margin: 1em;
 }
@@ -24,6 +18,17 @@ img {
 
 label {
   font-weight: bold;
+}
+
+input,
+select {
+  border: none;
+  border-bottom: solid black 2px;
+  color: blue;
+}
+
+input[type="submit"] {
+  border: initial;
 }
 
 textarea {
