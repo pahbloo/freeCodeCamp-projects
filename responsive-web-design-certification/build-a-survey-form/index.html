@@ -32,7 +32,13 @@
       </p>
     </section>
 
-    <form id="survey-form">
+    <form
+      id="survey-form"
+      action="https://tinyletter.com/pahbloo"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/pahbloo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+    >
       <section id="personal-data">
         <p>
           <label id="name-label" for="name"> Name: </label>
@@ -48,6 +54,7 @@
             placeholder="ex: joao@exemple.com"
             required
           />
+          <input type="hidden" value="1" name="embed" />
         </p>
         <p>
           <span class="country">
