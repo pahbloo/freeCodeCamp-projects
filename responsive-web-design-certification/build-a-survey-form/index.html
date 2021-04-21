@@ -48,7 +48,7 @@
         <p>
           <label id="name-label" for="name"> Name: </label>
 
-          <input id="name" placeholder="ex: João da Silva" required />
+          <input id="name" placeholder="João da Silva" required />
         </p>
 
         <p>
@@ -56,7 +56,7 @@
           <input
             id="email"
             type="email"
-            placeholder="ex: joao@exemple.com"
+            placeholder="joao@example.com"
             required
           />
           <input type="hidden" value="1" name="embed" />
@@ -65,13 +65,17 @@
           <span class="country">
             <label for="dropdown">Language:</label>
             <select id="dropdown">
-              <option value=""></option>
+              <option value="" disabled selected hidden>
+                Select your language
+              </option>
               <option value="English">English</option>
               <option value="Portuguese">Portuguese</option>
               <option value="Other">Other</option>
             </select>
           </span>
+        </p>
 
+        <p>
           <span class="age">
             <label id="number-label" for="number"> Age: </label>
             <input
@@ -79,16 +83,18 @@
               type="number"
               min="13"
               max="150"
-              placeholder="ex: 42"
+              placeholder="42"
             />
           </span>
+        </p>
 
+        <p>
           <span class="genre">
             <label>Genre:</label>
-            <input id="M" type="radio" name="radio" value="M" />
-            <label for="M">Male</label>
             <input id="F" type="radio" name="radio" value="F" />
             <label for="F">Female</label>
+            <input id="M" type="radio" name="radio" value="M" />
+            <label for="M">Male</label>
             <input id="Other" type="radio" name="radio" value="Other" />
             <label for="Other">Other</label>
           </span>

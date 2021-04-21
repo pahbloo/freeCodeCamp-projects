@@ -25,16 +25,27 @@ select {
   border: none;
   border-bottom: solid black 2px;
   color: blue;
+  font-family: "Patrick Hand", "Comic Sans", sans-serif;
 }
 
 input[type="submit"] {
-  border: initial;
+  border: black 1px solid;
+  color: black;
+  font-family: inherit;
+  margin-top: 1rem;
 }
 
 textarea {
   border: none;
   border-bottom: solid black 2px;
   color: blue;
+  font-family: "Patrick Hand", "Comic Sans", sans-serif;
   padding: 0;
   width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: grey;
+  font-style: italic;
 }
