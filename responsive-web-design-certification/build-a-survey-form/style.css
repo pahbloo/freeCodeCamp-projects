@@ -29,10 +29,12 @@ select {
 }
 
 input[type="submit"] {
-  border: black 1px solid;
+  border: black 2px solid;
   color: black;
   font-family: inherit;
+  font-weight: bold;
   margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 textarea {
@@ -45,7 +47,8 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+select:invalid {
   color: grey;
   font-style: italic;
 }
