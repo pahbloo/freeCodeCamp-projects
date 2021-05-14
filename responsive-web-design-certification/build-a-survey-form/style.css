@@ -29,7 +29,8 @@ select {
 }
 
 input[type="submit"] {
-  border: black 2px solid;
+  border: solid;
+  border-top: none;
   color: black;
   font-family: inherit;
   font-weight: bold;
@@ -51,4 +52,17 @@ textarea::placeholder,
 select:invalid {
   color: grey;
   font-style: italic;
+}
+
+/* Composition */
+
+/* Utility */
+
+.first-border {
+  border: solid;
+}
+
+.border {
+  border: solid;
+  border-top: none;
 }
