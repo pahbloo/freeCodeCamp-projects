@@ -36,6 +36,7 @@ input[type="submit"] {
   font-weight: bold;
   margin-top: 1rem;
   text-transform: uppercase;
+  width: 100%;
 }
 
 textarea {
@@ -55,6 +56,13 @@ select:invalid {
 }
 
 /* Composition */
+
+header,
+form,
+section,
+input[type="submit"] {
+  display: flow-root;
+}
 
 /* Utility */
 
