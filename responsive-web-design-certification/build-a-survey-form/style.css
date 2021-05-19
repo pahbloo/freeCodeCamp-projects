@@ -84,3 +84,19 @@ input[type="submit"] {
 .block-padding {
   padding: 1rem;
 }
+
+/* Block */
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.header h1 {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
