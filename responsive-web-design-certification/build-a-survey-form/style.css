@@ -16,6 +16,10 @@ img {
   width: 100px;
 }
 
+p {
+  margin: 0;
+}
+
 label {
   font-weight: bold;
 }
@@ -68,6 +72,10 @@ form,
 section,
 input[type="submit"] {
   display: flow-root;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
 }
 
 /* Utility */
