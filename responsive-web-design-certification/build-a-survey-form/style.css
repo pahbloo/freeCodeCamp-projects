@@ -80,10 +80,6 @@ input[type="submit"] {
 
 /* Utility */
 
-.first-border {
-  border: solid;
-}
-
 .border {
   border: solid;
   border-top: none;
@@ -91,6 +87,14 @@ input[type="submit"] {
 
 .block-padding {
   padding: 1rem;
+}
+
+.first-border {
+  border: solid;
+}
+
+.flex-grow {
+  flex: 1;
 }
 
 /* Block */
@@ -107,4 +111,22 @@ input[type="submit"] {
   flex: 1;
   margin: auto;
   text-align: center;
+}
+
+.form-line {
+  --flow-space: 0.5rem;
+  align-items: baseline;
+  display: flex;
+  gap: 0.2rem;
+  justify-content: space-between;
+}
+
+.form-line input,
+.form-line select {
+  flex: 1;
+}
+
+.form-line p {
+  display: flex;
+  gap: 0.2rem;
 }

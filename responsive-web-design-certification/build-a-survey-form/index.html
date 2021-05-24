@@ -45,13 +45,12 @@
       onsubmit="window.open('https://tinyletter.com/pahbloo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
     >
       <section id="personal-data" class="[ border block-padding flow ]">
-        <p>
+        <p class="[ form-line ]">
           <label id="name-label" for="name"> Name: </label>
-
           <input id="name" placeholder="João da Silva" required />
         </p>
 
-        <p>
+        <p class="[ form-line ]">
           <label id="email-label" for="email"> Email: </label>
           <input
             id="email"
@@ -61,44 +60,43 @@
           />
           <input type="hidden" value="1" name="embed" />
         </p>
-        <p>
-          <span class="country">
+
+        <div class="[ form-line ]">
+          <p class="flex-grow">
             <label for="dropdown">Language:</label>
-            <select id="dropdown" required>
-              <option value="" disabled selected hidden>
-                Select your language
-              </option>
+            <select id="dropdown" class="flex-grow" required>
+              <option value="" disabled selected hidden>Select</option>
               <option value="English">English</option>
               <option value="Portuguese">Portuguese</option>
               <option value="Other">Other</option>
             </select>
-          </span>
-        </p>
+          </p>
 
-        <p>
-          <span class="age">
+          <p class="flex-grow">
             <label id="number-label" for="number"> Age: </label>
             <input
               id="number"
+              class="flex-grow"
               type="number"
               min="13"
               max="150"
               placeholder="42"
+              size="3"
             />
-          </span>
-        </p>
+          </p>
 
-        <p>
-          <span class="genre">
-            <label>Genre:</label>
-            <input id="F" type="radio" name="radio" value="F" />
-            <label for="F">Female</label>
-            <input id="M" type="radio" name="radio" value="M" />
-            <label for="M">Male</label>
-            <input id="Other" type="radio" name="radio" value="Other" />
-            <label for="Other">Other</label>
-          </span>
-        </p>
+          <p>
+            <span class="genre">
+              <label>Genre:</label>
+              <input id="F" type="radio" name="radio" value="F" />
+              <label for="F">Female</label>
+              <input id="M" type="radio" name="radio" value="M" />
+              <label for="M">Male</label>
+              <input id="Other" type="radio" name="radio" value="Other" />
+              <label for="Other">Other</label>
+            </span>
+          </p>
+        </div>
       </section>
 
       <section id="check-emojis" class="[ border block-padding flow ]">
