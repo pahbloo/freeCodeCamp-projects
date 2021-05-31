@@ -1,6 +1,7 @@
 /* CSS */
 
 body {
+  box-sizing: border-box;
   font-family: Calibri, Arial, Helvetica, "Open Sans", sans-serif;
   font-size: 20px;
   margin: auto;
@@ -115,8 +116,9 @@ input[type="submit"] {
 
 .form-line {
   --flow-space: 0.5rem;
-  align-items: baseline;
+  align-items: stretch;
   display: flex;
+  flex-flow: column;
   gap: 0.2rem;
   justify-content: space-between;
 }
@@ -124,9 +126,27 @@ input[type="submit"] {
 .form-line input,
 .form-line select {
   flex: 1;
+  width: 100%;
 }
 
-.form-line p {
+.form-line input[type="radio"] {
+  margin-left: 0.3rem;
+  width: auto;
+}
+
+.form-line > p {
   display: flex;
+  flex-flow: column;
   gap: 0.2rem;
+}
+
+@media (min-width: 380px) {
+  .form-line {
+    align-items: baseline;
+    flex-flow: row;
+  }
+
+  .form-line > p {
+    flex-flow: row;
+  }
 }
