@@ -146,7 +146,19 @@ input[type="submit"] {
     flex-flow: row;
   }
 
+  .form-line[data-state="multi-forms"] {
+    align-items: stretch;
+    flex-flow: column;
+  }
+
   .form-line > p {
+    flex-flow: row;
+  }
+}
+
+@media (min-width: 630px) {
+  .form-line[data-state="multi-forms"] {
+    align-items: baseline;
     flex-flow: row;
   }
 }
